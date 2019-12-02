@@ -4,34 +4,25 @@
 
 | ID    | Nome | O Problema é | Afeta | Cujo Impacto é |
 |-------|------|--------------|-------|----------------|
-| PB 01 | Gerenciamento de Projetos lorem ipsum | O problema é lorem ipsum | O problema afeta lorem ipsum | O impacto é lorem ipsum |
-| PB 02 | Gerenciamento de Projetos lorem ipsum | O problema é lorem ipsum | O problema afeta lorem ipsum | O impacto é lorem ipsum |
+| PB 01 | Gerar Relatórios | Dificuldade de organizar os relatórios e acompanhamentos efetuados no CAPS | Agilidade na geração dos relatórios | Atraso nas Entregas dos resultados |
+| PB 02 | Controlar pacientes | Dificuldade em controlar fluxo de pacientes no CAPS | Organização interna | Disponibilidade das vagas |
 
 ## 2 - Necessidades
 
 | ID | Nome | Necessidade | Solução atual |
 |----|------|-------------|---------------|
-| NE 01 | necessidade x1 | Necessidade x1 | Solução x1 |
-| NE 02 | necessidade x1 | Necessidade x1 | Solução x1 |
-| NE 03 | necessidade x1 | Necessidade x1 | Solução x1 |
-| NE 04 | necessidade x1 | Necessidade x1 | Solução x1 |
-| NE 05 | necessidade x1 | Necessidade x1 | Solução x1 |
+| NE 01 | Diagnosticar distúrbios | Diagnosticar distúrbios psicológicos | Entrevistas registradas manualmente |
+| NE 02 | Aplicar Métodos | Aplicar métodos de reabilitação | Seleção manual dos métodos técnicos |
+| NE 03 | Fazer encaminhamentos | Fazer encaminhamentos dos necessitados | Triagem manual dos pacientes |
+| NE 04 | Acompanhar a evolução | Acompanhar a evolução do tratamento dos pacientes | Acompanhamento registrado em planilhas do excel |
 
 ## 3 - Características
 
 | ID       | Nome | Característica |
 |----------|------|----------------|
-|   CA 01  | Característica XPTO | Descrição da característica XPTO |
-|   CA 02  | Característica XPTO | Descrição da característica XPTO |
-|   CA 03  | Característica XPTO | Descrição da característica XPTO |
-|   CA 04  | Característica XPTO | Descrição da característica XPTO |
-|   CA 05  | Característica XPTO | Descrição da característica XPTO |
-|   CA 06  | Característica XPTO | Descrição da característica XPTO |
-|   CA 07  | Característica XPTO | Descrição da característica XPTO |
-|   CA 08  | Característica XPTO | Descrição da característica XPTO |
-|   CA 09  | Característica XPTO | Descrição da característica XPTO |
-|   CA 10  | Característica XPTO | Descrição da característica XPTO |
-|   CA 11  | Característica XPTO | Descrição da característica XPTO |
+|   CA 01  | Encaminhamento do SUS | O paciente é encaminhado pelo SUS |
+|   CA 02  | Análise do grau de disturbio | Feito uma analise do grau do distúrbio psicológico |
+|   CA 03  | Encaminhamento para especialistas | Feito o encaminhamento para especialistas que irão cuidar do paciente |
 
 ## 4 - Requisitos Funcionais
 
@@ -64,27 +55,15 @@
 
 |Identificador|Nome|Descrição|
 |-------------|----|---------|
-|     UC01    | Atividade X | Tem como objetivo fazer com que o cliente lorem ipsum lorem ipsum |
-|     UC02    | Atividade X | Tem como objetivo fazer com que o cliente lorem ipsum lorem ipsum |
-|     UC03    | Atividade X | Tem como objetivo fazer com que o cliente lorem ipsum lorem ipsum |
-|     UC04    | Atividade X | Tem como objetivo fazer com que o cliente lorem ipsum lorem ipsum |
-|     UC05    | Atividade X | Tem como objetivo fazer com que o cliente lorem ipsum lorem ipsum |
-|     UC06    | Atividade X | Tem como objetivo fazer com que o cliente lorem ipsum lorem ipsum |
-|     UC07    | Atividade X | Tem como objetivo fazer com que o gerente lorem ipsum lorem ipsum |
-|     UC08    | Atividade X | Tem como objetivo fazer com que o cliente lorem ipsum lorem ipsum |
-|     UC09    | Atividade X | Tem como objetivo fazer com que o product owner lorem ipsum lorem  |
-|     UC10    | Atividade X | Tem como objetivo fazer com que o cliente lorem ipsum lorem ipsum |
-|     UC11    | Atividade X | Tem como objetivo fazer com que o stakeholder lorem ipsum lorem  |
-|     UC12    | Atividade X | Tem como objetivo fazer com que o cliente lorem ipsum lorem ipsum |
-|     UC13    | Atividade X | Tem como objetivo fazer com que o gerente de projeto lorem ipsum  |
-|     UC14    | Atividade X | Tem como objetivo fazer com que o cliente lorem ipsum lorem ipsum |
-|     UC15    | Atividade X | Tem como objetivo fazer com que o stakeholder lorem ipsum lorem |
-|     UC16    | Atividade X | Tem como objetivo fazer com que o cliente lorem ipsum lorem ipsum |
-|     UC17    | Atividade X | Tem como objetivo fazer com que o product owner lorem ipsum lorem  |
-|     UC18    | Atividade X | Tem como objetivo fazer com que o cliente lorem ipsum lorem ipsum |
-|     UC19    | Atividade X | Tem como objetivo fazer com que o gerente lorem ipsum lorem ipsum |
-|     UC20    | Atividade X | Tem como objetivo fazer com que o cliente lorem ipsum lorem ipsum |
-|     UC21    | Atividade X | Tem como objetivo fazer com que o gerente de projeto lorem ipsum  |
+|     UC01    | Cadastrar paciente | Um funcionario cadastra pacientes do CAPS esperança com os dados da ficha técnica padrão já existente em papel. |
+|     UC02    | Cadastrar Psicólogo | Um funcionario cadastra psicólogos do CAPS Esperança com os dados da ficha técnica padrão já existente em papel. |
+|     UC03    | Cadastrar Assistente social | Um funcionario cadastra assistentes sociais do CAPS Esperança com os dados da ficha técnica padrão já existente em papel. |
+|     UC04    | Cadastrar relatório de uma sessão | Um psicólogo cadastra das informações levantadas durante uma sessão com um paciente por um psicólogo. |
+|     UC05    | Listar histórico de consultas | Gera um relatório das consultas de um paciente |
+|     UC06    | Apresentar relatório de indicadores da evolução do paciente | Gera um relatório da evolução do paciente dentre um período de tratamento. |
+|     UC07    | Listar histórico de medicamentos | Gera um relatório dos medicamentos utilizados pelo paciente em um período de tratamento. |
+|     UC08    | Autenticar acesso de psicólogo | Realiza a autenticação de um psicólogo por meio de seu CRP e senha |
+|     UC09    | Autenticar acesso de assistente social | Realiza a autenticação de um assistente social por meio de seu email e senha  |
 
 ## 6 - Matriz de rastreabilidade
 
@@ -94,9 +73,8 @@
 |-|------|-------|
 |**NE01**| X |   |
 |**NE02**| X |   |
-|**NE03**| X |   |
-|**NE04**|   | X |
-|**NE05**| X |   |
+|**NE03**|   | X |
+|**NE04**| X |   |
 
 
 
