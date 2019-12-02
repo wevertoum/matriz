@@ -28,27 +28,23 @@
 
 | ID    | Requisito Funcional |Observação|
 |-------|---------------------|----------|
-| RF 01 | O usuário deve ser capaz de lorem ipsum |          |
-| RF 02 | O usuário deve ser capaz de lorem ipsum |          |
-| RF 03 | O usuário deve ser capaz de lorem ipsum |          |
-| RF 04 | O usuário deve ser capaz de lorem ipsum |          |
-| RF 05 | O usuário deve ser capaz de lorem ipsum |          |
-| RF 06 | O usuário deve ser capaz de lorem ipsum |          |
-| RF 07 | O usuário deve ser capaz de lorem ipsum |          |
-| RF 08 | O usuário deve ser capaz de lorem ipsum |          |
-| RF 09 | O usuário deve ser capaz de lorem ipsum |          |
-| RF 10 | O usuário deve ser capaz de lorem ipsum |          |
-| RF 11 | O usuário deve ser capaz de lorem ipsum |          |
-| RF 12 | O usuário deve ser capaz de lorem ipsum |          |
+| RF 01 | O sistema deve permitir o cadastro de pacientes do CAPS esperança com os dados da ficha técnica padrão já existente em papel. |          |
+| RF 02 | O sistema deverá permitir o cadastro de psicólogos do CAPS Esperança com os dados da ficha técnica padrão já existente em papel. |          |
+| RF 03 | O sistema deverá permitir o cadastro de assistentes sociais do CAPS Esperança com os dados da ficha técnica padrão já existente em papel. |          |
+| RF 04 | O sistema deverá permitir o cadastro das informações levantadas durante uma sessão com um paciente por um psicólogo. |          |
+| RF 05 | O sistema deverá gerar um relatório das consultas de um paciente, podendo ser filtradas por data ou geral. |          |
+| RF 06 | O sistema deverá gerar um relatório da evolução do paciente dentre um período de tratamento. |          |
+| RF 07 | O sistema deverá gerar um relatório dos medicamentos utilizados pelo paciente em um período de tratamento. |          |
+| RF 08 | O sistema deverá realizar a autenticação de um psicólogo por meio de seu CRP e senha |          |
+| RF 09 | O sistema deverá realizar a autenticação de um assistente social por meio de seu email e senha |          |
 
 ## 4.1 - Requisitos Não-Funcionais
 | ID    | Requisito Não-Funcional |
 |-------|-------------------------|
-| RNF 01 | O sistema deve lorem ipsum lorem ipsum |
-| RNF 02 | O sistema deve lorem ipsum lorem ipsum |
-| RNF 03 | O sistema deve lorem ipsum lorem ipsum |
-| RNF 04 | O sistema deve lorem ipsum lorem ipsum |
-| RNF 05 | O sistema deve lorem ipsum lorem ipsum |
+| RNF 01 | O sistema deverá estar disponível apenas dentro da instalação do CAPS Esperança |
+| RNF 02 | O sistema deve oferecer acesso por meio da rede interna do CAPS Esperança |
+| RNF 03 | O sistema deve poder ser utilizado em dispositivos móveis e em desktop |
+| RNF 04 | O sistema deve disponibilizado sem a necessidade de instalar o mesmo. 
 
 
 ## 5 - Casos de Uso
@@ -80,59 +76,36 @@
 
 ### 6.2 - Necessidade X Característica
 
-|        | NE01 | NE02 | NE03 | NE04 | NE05 |
-|--------|------|------|------|------|------|
-|**CA01**|  X   |      |      |      |      |
-|**CA02**|  X   |      |      |      |      |
-|**CA03**|      |   X  |      |      |      |
-|**CA04**|      |      |   X  |      |      |
-|**CA05**|      |      |   X  |      |      |
-|**CA06**|      |      |   X  |      |      |
-|**CA07**|      |      |   X  |      |      |
-|**CA08**|      |      |      |   X  |      |
-|**CA09**|      |      |      |   X  |      |
-|**CA10**|      |      |      |   X  |      |
-|**CA11**|      |      |      |      |   X  |
+|        | NE01 | NE02 | NE03 | NE04 |
+|--------|------|------|------|------|
+|**CA01**|  X   |      |  X   |      |
+|**CA02**|  X   |      |      |   X  |      
+|**CA03**|      |   X  |      |      | 
 
 ### 6.3 - Característica X Requisitos Funcionais
 
-|        | CA01 | CA02 | CA03 | CA04 | CA05 | CA06 | CA07 | CA08 | CA09 | CA10 | CA11 |
-|--------|------|------|------|------|------|------|------|------|------|------|------|
-|**RF01**|  X   |      |      |      |      |      |      |      |      |      |      |
-|**RF02**|      |  X   |      |      |      |      |      |      |      |      |      |
-|**RF03**|      |      |      |      |  X   |      |      |      |      |      |      |
-|**RF04**|      |      |      |      |  X   |      |  X   |      |      |      |      |
-|**RF05**|      |      |      |      |  X   |      |  X   |      |      |      |      |
-|**RF06**|      |      |      |      |      |  X   |      |      |      |      |      |
-|**RF07**|      |      |      |      |      |  X   |      |      |      |      |      |
-|**RF08**|      |      |  X   |      |      |  X   |      |      |      |      |      |
-|**RF09**|      |      |      |  X   |      |      |      |      |      |      |      |
-|**RF10**|      |      |      |      |      |      |      |  X   |  X   |  X   |      |
-|**RF11**|      |      |  X   |      |      |      |      |      |      |      |      |
-|**RF12**|      |      |      |      |      |      |      |      |      |      |  X   |
+|        | CA01 | CA02 | CA03 |
+|--------|------|------|------|
+|**RF01**|  X   |      |      |
+|**RF02**|      |  X   |      |
+|**RF03**|      |   X  |      |
+|**RF04**|   X  |      |      |
+|**RF05**|      |      | X    |
+|**RF06**|   X  |      |      | 
+|**RF07**|      |      |  X   | 
+|**RF08**|      |      |  X   | 
+|**RF09**|   X  |      |      |
 
 ### 6.4 - RF X Caso de uso
 
-|   ID   |RF01|RF02|RF03|RF04|RF05|RF06|RF07|RF08|RF09|RF10|RF11|RF12|
-|--------|----|----|----|----|----|----|----|----|----|----|----|----|
-|**UC01**|    |    |    |    |    |    |    |    |    |    |    | X  |
-|**UC02**|    |    |    |    |    |    |    |    |    |    |    | X  |
-|**UC03**| X  |    |    |    |    |    |    |    |    |    |    |    |
-|**UC04**|    |    |    |    |    |    |    |    |    | X  |    |    |
-|**UC05**| X  |    |    |    |    |    |    |    |    |    |    |    |
-|**UC06**| X  | X  |    |    |    |    |    |    |    |    |    |    |
-|**UC07**| X  | X  |    |    |    | X  |    |    |    |    |    | X  |
-|**UC08**|    | X  |    |    |    |    |    |    |    |    | X  |    |
-|**UC09**|    |    |    |    |    |    |    |    |    | X  |    |    |
-|**UC10**|    |    |    |    |    |    |    |    | X  |    |    |    |
-|**UC11**|    |    | X  | X  | X  |    |    |    |    |    |    |    |
-|**UC12**|    |    | X  | X  | X  |    |    |    |    | X  |    |    |
-|**UC13**|    |    |    | X  |    |    |    |    |    |    |    |    |
-|**UC14**|    |    |    |    | X  |    |    |    |    |    |    |    |
-|**UC15**|    |    | X  |    |    |    |    |    |    |    |    |    |
-|**UC16**|    |    |    |    |    | X  |    |    |    |    |    |    |
-|**UC17**|    |    |    |    |    |    |    | X  |    |    |    |    |
-|**UC18**|    |    |    |    |    |    | X  |    |    |    |    |    |
-|**UC19**|    | X  |    |    |    |    |    |    |    |    |    |    |
-|**UC20**|    |    | X  |    |    |    |    |    |    |    |    |    |
-|**UC21**|    |    |    | X  |    |    |    |    |    |    |    |    |
+|   ID   |RF01|RF02|RF03|RF04|RF05|RF06|RF07|RF08|RF09|
+|--------|----|----|----|----|----|----|----|----|----|
+|**UC01**|    |    |    |    |  X |    |    |    |    | 
+|**UC02**|    |    |  X |    |    |    |    |    |    | 
+|**UC03**| X  |    |    |    |    |    |    |    |    |  
+|**UC04**|    |    |  X |    |  X |    |    |    |    | 
+|**UC05**| X  |    |    |    |    |    |    |    |    |  
+|**UC06**| X  | X  |    |    |    |    |    |    |    |  
+|**UC07**| X  | X  |    |    |    | X  |    |    |    |  
+|**UC08**|    | X  |    |    |    |    |    |    |    |  
+|**UC09**|    |    |  X |    |  X |    |    |    |    | 
